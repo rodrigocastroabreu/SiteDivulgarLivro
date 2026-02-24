@@ -92,6 +92,69 @@ body{
 h1,h2,h3{color:var(--text)}
 p{color:var(--muted)}
 
+
+/* --------------------------------------------------------------------------
+   3D & DEPTH STYLES
+   - adiciona profundidade com sombras múltiplas, perspectiva e transform
+-------------------------------------------------------------------------- */
+
+/* contexto 3D para áreas que usem mockups/cartões */
+.scene{
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+}
+
+/* efeito de cartão 3D padrão */
+.card-3d{
+    transform-origin: center center;
+    transition: transform 400ms cubic-bezier(.2,.9,.3,1), box-shadow 300ms;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* hover sutil que levanta o cartão e gira levemente */
+.card-3d:hover{
+    transform: translateY(-12px) rotateX(6deg) rotateY(-6deg) translateZ(18px);
+    box-shadow: 0 30px 80px rgba(16,24,40,0.18), 0 6px 18px rgba(16,24,40,0.06);
+}
+
+/* Book mockup com profundidade (usa .scene no container pai) */
+.book-mockup{
+    transform-style: preserve-3d;
+}
+.book-mockup img{
+    border-radius:10px;
+    transform: rotateY(-6deg) rotateX(2deg) translateZ(18px);
+    box-shadow: 0 40px 90px rgba(15,23,42,0.14), 0 10px 30px rgba(15,23,42,0.06);
+    transition: transform 500ms cubic-bezier(.2,.9,.3,1), box-shadow 300ms;
+}
+.book-mockup:hover img{transform: rotateY(-2deg) rotateX(0deg) translateZ(28px)}
+
+/* Botão com camada 3D e borda invertida */
+.btn-primary{
+    position:relative;overflow:visible;
+}
+.btn-primary::after{
+    content:"";position:absolute;inset:0;border-radius:999px;z-index:-1;
+    background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.06));
+    transform: translateY(6px) scale(0.98);filter:blur(6px);opacity:0.9;
+}
+.btn-primary:active{transform:translateY(2px)}
+
+/* Depoimento - leve inclinação 3D */
+.depoimento-card.card-3d{transform: rotateX(3deg);}
+
+/* micro-interações: foco acessível */
+.btn:focus{outline:3px solid rgba(124,58,237,0.12);outline-offset:3px}
+
+/* --------------------------------------------------------------------------
+   ORGANIZAÇÃO E COMENTÁRIOS
+   - esta seção agrupa utilitários e mantém o arquivo legível
+-------------------------------------------------------------------------- */
+
+.u-center{text-align:center}
+.u-gap{gap:16px}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 32px;
