@@ -18,6 +18,11 @@ body {
     border-top: 1px solid #d5d5d5;
 }
 
+.hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
 /* Títulos */
 h1 {
     font-size: 42px;
@@ -61,7 +66,7 @@ img {
 a {
     display: inline-block;
     padding: 12px 36px;
-    background-color: #49b970;
+    background-color: #2b8f54;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
