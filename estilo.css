@@ -18,9 +18,22 @@ body {
     border-top: 1px solid #d5d5d5;
 }
 
-.hero {
-    padding-top: 80px;
-    padding-bottom: 40px;
+/* Títulos */
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 /* Títulos */
@@ -66,7 +79,7 @@ img {
 a {
     display: inline-block;
     padding: 12px 36px;
-    background-color: #2b8f54;
+    background-color: #49b970;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
