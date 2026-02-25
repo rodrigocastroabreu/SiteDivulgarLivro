@@ -1,70 +1,306 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Era Artificial — Site de divulgação</title>
-    <meta name="description" content="Página de divulgação do livro A Era Artificial, uma obra de ficção científica.">
+
+    <!-- TÍTULO SEO -->
+    <title>[Nome do Livro — Gênero | Livro]</title>
+
+    <!-- META DESCRIPTION (até 160 caracteres) -->
+    <meta name="description"
+        content="[Escreva uma descrição otimizada para Google com palavras-chave principais do livro]">
+
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-    <header>
-        <section class="bloco hero" aria-label="Capa do livro">
-            <h1>A Era Artificial</h1>
-            <h2>Um futuro sombrio se aproxima</h2>
+    <!-- HERO SECTION -->
+    <header class="hero" role="banner" aria-label="Hero" data-section="hero">
+        <div class="container">
+            <div class="hero-content u-gap" data-block="hero-content">
 
-            <img src="assets/capa-livro.svg" alt="Ilustração da capa do livro A Era Artificial" loading="lazy">
+                <h1 class="book-title">[Nome do Livro]</h1>
 
-            <p>
-                A inteligência artificial permitiu que robôs se tornassem a espécie dominante.
-                Em meio ao caos e à guerra, a humanidade luta para sobreviver.
-            </p>
+                <p class="subtitle">
+                    [Subtítulo ou frase de impacto que resume a essência do livro]
+                </p>
 
-            <a href="https://amzn.to/3bXy1g9" target="_blank" rel="noopener" aria-label="Comprar A Era Artificial">COMPRAR</a>
-        </section>
+                <p class="description">
+                    [Descreva aqui a premissa principal do livro. 
+                    Apresente protagonista, conflito inicial e tom da história. 
+                    200–300 caracteres. Evite spoilers.]
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="#comprar" class="btn btn-primary">
+                        [Texto do botão principal — Ex: Comprar Agora]
+                    </a>
+                    <a href="#sobre" class="btn btn-secondary">
+                        [Texto do botão secundário — Ex: Saiba Mais]
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image scene" aria-hidden="false">
+                <div class="book-mockup card-3d">
+                    <img class="book-cover" src="[URL da capa do livro]"
+                        alt="[Capa do livro Nome do Livro]">
+                </div>
+            </div>
+        </div>
     </header>
 
     <main role="main">
-        <section class="bloco">
-            <h3>Uma história intensa</h3>
 
-            <p>
-                <span>A Era Artificial – O Tempo Sombrio das Máquinas</span> prende o leitor
-                em um cenário devastado pela destruição e pelo medo, levando à reflexão:
-                a singularidade tecnológica é inevitável?
-            </p>
+        <!-- SOBRE O LIVRO -->
+        <section id="sobre" class="section sobre" role="region" aria-label="Sobre o Livro" data-section="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre o Livro</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="sobre-grid" data-block="sobre-grid">
+
+                    <div class="sobre-card card card-3d">
+                        <h3>[Título do Card 1 — Ex: A Premissa]</h3>
+                        <p>
+                            [Explique aqui a situação inicial da história.
+                            Quem é o personagem principal?
+                            O que desencadeia o conflito?]
+                        </p>
+                    </div>
+
+                    <div class="sobre-card card card-3d">
+                        <h3>[Título do Card 2 — Ex: O Conflito]</h3>
+                        <p>
+                            [Descreva o principal obstáculo ou dilema enfrentado.
+                            Mostre a tensão central da narrativa.]
+                        </p>
+                    </div>
+
+                    <div class="sobre-card card card-3d">
+                        <h3>[Título do Card 3 — Ex: O Impacto]</h3>
+                        <p>
+                            [Mostre o que o leitor vai sentir ou refletir.
+                            Destaque o impacto emocional ou intelectual.]
+                        </p>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-        <section class="bloco author">
-            <h3>Sobre o autor</h3>
+        <!-- BENEFÍCIOS -->
+        <section class="section beneficios" role="region" aria-label="Benefícios" data-section="beneficios">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por Que Ler Este Livro?</h2>
+                    <div class="divider"></div>
+                </div>
 
-            <img src="assets/autor.svg" alt="Retrato do autor Diego Souza" loading="lazy">
+                <div class="beneficios-grid">
 
-            <p>
-                Diego Souza é desenvolvedor web, apaixonado por tecnologia e ficção
-                científica. Carioca, escreve histórias futuristas nas horas vagas.
-            </p>
+                    <div class="beneficio-item card">
+                        <div class="beneficio-icon">[Emoji]</div>
+                        <h3>[Nome do benefício]</h3>
+                        <p>[Explique o benefício direto para o leitor]</p>
+                    </div>
+
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">[Emoji]</div>
+                        <h3>[Nome do benefício]</h3>
+                        <p>[Explique o benefício direto para o leitor]</p>
+                    </div>
+
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">[Emoji]</div>
+                        <h3>[Nome do benefício]</h3>
+                        <p>[Explique o benefício direto para o leitor]</p>
+                    </div>
+
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">[Emoji]</div>
+                        <h3>[Nome do benefício]</h3>
+                        <p>[Explique o benefício direto para o leitor]</p>
+                    </div>
+
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">[Emoji]</div>
+                        <h3>[Nome do benefício]</h3>
+                        <p>[Explique o benefício direto para o leitor]</p>
+                    </div>
+
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">[Emoji]</div>
+                        <h3>[Nome do benefício]</h3>
+                        <p>[Explique o benefício direto para o leitor]</p>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-        <section class="bloco cta">
-            <p>
-                O livro <span>A Era Artificial</span> apresenta um cenário apocalíptico onde
-                os robôs alcançaram sua independência e se tornaram a espécie dominante.
-                Como a humanidade pode enfrentar esse inimigo?
-            </p>
+        <!-- DEPOIMENTOS -->
+        <section class="section depoimentos" role="region" aria-label="Depoimentos" data-section="depoimentos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O Que Leitores Dizem</h2>
+                    <div class="divider"></div>
+                </div>
 
-            <p>
-                <span>Uma obra que promete fazer você refletir sobre o futuro da humanidade.</span>
-            </p>
+                <div class="depoimentos-grid">
 
-            <a href="https://amzn.to/3bXy1g9" target="_blank" rel="noopener" aria-label="Comprar A Era Artificial">COMPRAR</a>
+                    <div class="depoimento-card card card-3d">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            [Escreva aqui um depoimento curto e convincente.
+                            Pode destacar emoção, qualidade da escrita ou impacto.]
+                        </p>
+                        <p class="autor-depo">
+                            — [Nome do leitor], [Cidade/Estado]
+                        </p>
+                    </div>
+
+                    <div class="depoimento-card">
+                        <div class="stars">★★★★★</div>
+                        <p>[Segundo depoimento]</p>
+                        <p class="autor-depo">
+                            — [Nome do leitor], [Cidade/Estado]
+                        </p>
+                    </div>
+
+                    <div class="depoimento-card">
+                        <div class="stars">★★★★★</div>
+                        <p>[Terceiro depoimento]</p>
+                        <p class="autor-depo">
+                            — [Nome do leitor], [Cidade/Estado]
+                        </p>
+                    </div>
+
+                </div>
+            </div>
         </section>
+
+        <!-- SOBRE O AUTOR -->
+        <section id="autor" class="section autor" role="region" aria-label="Sobre o Autor" data-section="autor">
+            <div class="container">
+                <div class="autor-content">
+
+                    <div class="autor-image">
+                        <img class="author-photo" src="[URL da foto do autor]"
+                            alt="[Nome do autor]">
+                    </div>
+
+                    <div class="autor-text">
+                        <h2>Sobre o Autor</h2>
+
+                        <p>
+                            <strong>[Nome do Autor]</strong> —
+                            [Descreva experiência, trajetória e conexão com o livro.]
+                        </p>
+
+                        <p>
+                            [Conte a história profissional ou pessoal relevante.]
+                        </p>
+
+                        <p>
+                            [Curiosidade ou elemento humano que gere conexão.]
+                        </p>
+
+                        <div class="autor-socials">
+                            <a href="[Link Instagram]" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">Instagram</a>
+                            <a href="[Link LinkedIn]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                            <a href="[Link Twitter/X]" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="section cta-final" role="region" aria-label="Chamada para Ação" data-section="cta-final">
+            <div class="container">
+                <div class="cta-content">
+
+                    <h2>[Mensagem forte de chamada para ação]</h2>
+
+                    <p>
+                        [Reforce os benefícios e incentive o leitor a agir agora.]
+                    </p>
+
+                    <div class="cta-buttons">
+                        <a href="[Link de compra principal]" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary btn-large" id="comprar" aria-label="Comprar Agora">
+                            [Comprar Agora]
+                        </a>
+
+                        <a href="[Link secundário]" target="_blank"
+                            class="btn btn-secondary btn-large">
+                            [Outra opção]
+                        </a>
+                    </div>
+
+                    <p class="promo-note">
+                        [Mensagem opcional de promoção, bônus ou desconto]
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bloco footer">
-        <p>© Diego Souza — A Era Artificial</p>
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo" aria-label="Rodapé">
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-section">
+                    <h4>[Nome do Livro]</h4>
+                    <p>[Frase resumo do livro]</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#autor">Autor</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="[Facebook]" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a></li>
+                        <li><a href="[Instagram]" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+                        <li><a href="[Twitter]" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a></li>
+                        <li><a href="[TikTok]" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; [Ano] [Nome do Autor ou Marca].
+                    Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
     </footer>
 
 </body>
